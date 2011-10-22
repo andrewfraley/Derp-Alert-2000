@@ -1,3 +1,6 @@
 This is a Javascript game prototype using Raphaeljs.  It's no where near done
 and needs collision support on bullets and enemies.  The enemies need modeled 
 and animated.  Use the arrow keys to move and space bar to fire.
+
+This works best in Chrome.  It barely works in IE.  Also requires a fairly
+fast machine.
