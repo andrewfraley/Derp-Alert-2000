@@ -1,28 +1,5 @@
-/*
-Copyright © 2011 Andy Fraley (andrew.fraley@gmail.com)
-
-Permission is hereby granted, free of charge, to any person obtaining
-a copy of this software and associated documentation files (the
-"Software"), to deal in the Software without restriction, including
-without limitation the rights to use, copy, modify, merge, publish,
-distribute, sublicense, and/or sell copies of the Software, and to
-permit persons to whom the Software is furnished to do so, subject to
-the following conditions:
-
-The above copyright notice and this permission notice shall be
-included in all copies or substantial portions of the Software.
-
-THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,
-EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
-MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
-NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE
-LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION
-OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION
-WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
-*/
-
 windowload = function() { 
-var paper = new Raphael(document.getElementById('game'), 1000, 1000);
+var paper = new Raphael(document.getElementById('gamecanvas'), 1000, 1000);
 var events = new Array();
 var main_radius = 350;
 var cx = 500;
@@ -151,7 +128,7 @@ for (z = 1; z<= enemy_count; z++) { // Spawn the enemies.  They will continuousl
 }
 
 function draw_game_over() {
-	var go_paper = new Raphael(document.getElementById('game'), 1000, 1000);
+	var go_paper = new Raphael(document.getElementById('gamecanvas'), 1000, 1000);
 	var game_over_drawing = go_paper.text(500,500, "GAME OVER");
 }
 
